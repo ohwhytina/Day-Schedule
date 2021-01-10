@@ -58,7 +58,7 @@ textarea{
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 1px solid white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
@@ -71,7 +71,7 @@ textarea{
 }
 
 #svgMain {
-  margin-left:-55px; 
+  margin-left:-50px; 
   margin-right:auto; 
   margin-top: -10px;
 }
