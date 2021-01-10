@@ -31,24 +31,26 @@
     <div class="container">
       <!-- Timeblocks go here -->
       <div class="container">
-        <section class="row border-top border-bottom">
-          <div class="col-md-2 border-right">
-          <p class="text-right">9 AM</p>
+
+        <section class="row time-block">
+          <div class="col-2 time">
+            <p>8 AM</p>
           </div>
-              <textarea class="col px-md-8 mh-100 bg-light form-group form-control" id="exampleFormControlTextarea1" row="2" ></textarea>
-        
-            <button type="submit" class="col-md-2 mh-100 bg-primary border-right border-left rounded-right btn btn-primary mb-2">
-              <svg id="svgMain" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="mr-auto bi bi-save-fill" viewBox="0 0 16 16">
-                <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
-              </svg>
-            </button>
-        </section>
+          <textarea id="to-do" class="col px-md-8 mh-100 bg-light form-group form-control"></textarea>
+          <button id="save-to-do" type="submit" class="col-2 mh-100 bg-primary rounded-right btn btn-primary">
+            <svg id="svgMain" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="mr-auto bi bi-save-fill" viewBox="0 0 16 16">
+              <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+            </svg>
+          </button>
+      </section>
+
       </div>
     </div>
       
     </div>
-    <script src="script.js"></script>
+   
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
