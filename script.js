@@ -19,11 +19,11 @@ $(".btn").on("click", function () {
     $("#10Hour .todo").val(localStorage.getItem("10Hour"));
     $("#11Hour .todo").val(localStorage.getItem("11Hour"));
     $("#12Hour .todo").val(localStorage.getItem("12Hour"));
-    $("#1Hour .todo").val(localStorage.getItem("1Hour"));
-    $("#2Hour .todo").val(localStorage.getItem("2Hour"));
-    $("#3Hour .todo").val(localStorage.getItem("3Hour"));
-    $("#4Hour .todo").val(localStorage.getItem("4Hour"));
-    $("#5Hour .todo").val(localStorage.getItem("5Hour"));
+    $("#13Hour .todo").val(localStorage.getItem("13Hour"));
+    $("#14Hour .todo").val(localStorage.getItem("14Hour"));
+    $("#15Hour .todo").val(localStorage.getItem("15Hour"));
+    $("#16Hour .todo").val(localStorage.getItem("16Hour"));
+    $("#17Hour .todo").val(localStorage.getItem("17Hour"));
 
 //show past, present, future schedule color coordinate
 function timeList() {
@@ -33,9 +33,12 @@ function timeList() {
 
         if (scheduleHour < currentHour) {
             $(this).addClass("past");
+            $(this).removeClass("present");
+            $(this).removeClass("future");
         } else if (scheduleHour === currentHour) {
             $(this).removeClass("past");
             $(this).addClass("present");
+            $(this).removeClass("future");
         } else {
             $(this).removeClass("past");
             $(this).removeClass("present");
