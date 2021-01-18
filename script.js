@@ -1,6 +1,7 @@
 $(document).ready(function () {
 //display date 
-$("#currentDay").text(moment().format("MMMM Do, YYYY, h:mm a"));
+$("#currentDay").text(moment().format("MMMM Do, YYYY"));
+
 
 //save inputs
 $(".btn").on("click", function () {
@@ -25,37 +26,24 @@ $(".btn").on("click", function () {
     $("#5Hour .todo").val(localStorage.getItem("5Hour"));
 
 //show past, present, future schedule color coordinate
-function timeList () {
-    
-    var currentHour = moment().hour();
-    
+function timeList() {
+    var currentHour = moment().hours();
+    $(".time-block").each(function() {
+        var scheduleHour = parseInt($(this).attr("id").split("hour")[0]);
 
-    // loop over time blocks
-    $(".time-block").each(function () {
-        var scheduleHour = parseInt($(this).attr("id").split("Hour")[1]);
-        console.log(scheduleHour, currentHour)
-
-        //use past css (grey) for past hours
         if (scheduleHour < currentHour) {
             $(this).addClass("past");
-            $(this).removeClass("future");
-            $(this).removeClass("present");
-        }
-        //use present css (red) for current hour
-        else if (scheduleHour === currentHour) {
+        } else if (scheduleHour === currentHour) {
             $(this).removeClass("past");
             $(this).addClass("present");
-            $(this).removeClass("future");
-        }
-        //use future css (green) for future hours
-        else {
-            $(this).removeClass("present");
+        } else {
             $(this).removeClass("past");
+            $(this).removeClass("present");
             $(this).addClass("future");
         }
-    })
+    });
 }
 
-//rerun function
 timeList();
+
 })

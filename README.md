@@ -15,4 +15,4 @@ https://ohwhytina.github.io/Day-Schedule/
 https://github.com/ohwhytina/Day-Schedule
 
 ## Video 
-![Day-Schedule] (https://raw.githubusercontent.com/ohwhytina/Day-Schedule/main/Work%20Day%20Scheduler.gif)
+![Day-Schedule ] (https://raw.githubusercontent.com/ohwhytina/Day-Schedule/main/Work%20Day%20Scheduler.gif)
